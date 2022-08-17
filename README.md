@@ -5,14 +5,3 @@ Esse Design Pattern é responsável por criar **avisos de utilização da soluç
 Veja a esquematização a seguir do funcionamento de uma Notification Pattern com Handlers:
 
 ![Imagem](schema.png)
-
-
-```mermaid
-graph TD;
-    Notification-->Cliente;
-    Cliente-->NomeModel;
-    Cliente-->EmailModel;
-    NomeModel-->Verificações;
-    EmailModel-->Verificações;
-    Verificações-->Notification;
-```
