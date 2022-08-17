@@ -9,8 +9,10 @@ Veja a esquematização a seguir do funcionamento de uma Notification Pattern co
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Notification-->Cliente;
+    Cliente-->NomeModel;
+    Cliente-->EmailModel;
+    NomeModel-->Verificações;
+    EmailModel-->Verificações;
+    Verificações-->Notification;
 ```
